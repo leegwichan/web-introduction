@@ -18,5 +18,8 @@ function enroll() {
 }
 
 function reset() {
-    alert('Reset Button clicked!');
+    document.getElementById('visitorName').value = null;
+
+    document.querySelectorAll('input[name="movie"]')
+            .forEach(checkbox => checkbox.checked = false);
 }
